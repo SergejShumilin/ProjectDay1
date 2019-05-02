@@ -1,22 +1,18 @@
 package by.javatr.task9.util;
 
-import by.javatr.scanner.EnterFromConsole;
+import by.javatr.scanner.MyScanner;
 
 public class Circle {
-    private static double circumference;
-    private static double squareCicle;
 
-    public static double getCircumference(){
-        double radius = EnterFromConsole.enterDouble();
-        circumference = 2*Math.PI*radius;
-        System.out.println("Длина окружности = " + circumference);
-        return circumference;
-    }
-
-    public static double getSquareCicle(){
-        double radius = EnterFromConsole.enterDouble();
-        squareCicle = Math.PI*radius*radius;
-        System.out.println("Площать круга равна = " + squareCicle);
-        return squareCicle;
+    public static double getCircumferenceAndSquareCicle() throws Exception {
+        double radius = MyScanner.enterDouble();
+        if (radius<1){
+            throw new Exception();
+        } else {
+            double circumference = 2 * Math.PI * radius;
+            double squareCicle = Math.PI*radius*radius;
+            System.out.println("Длина окружности = " + circumference + ", площадь круга = " + squareCicle);
+            return circumference;
+        }
     }
 }

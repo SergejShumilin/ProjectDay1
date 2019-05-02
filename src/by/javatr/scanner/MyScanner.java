@@ -2,14 +2,14 @@ package by.javatr.scanner;
 
 import java.util.Scanner;
 
-public class EnterFromConsole {
-    private static Scanner scanner = new Scanner(System.in);
-    private static double number;
+public class MyScanner {
+    private static final Scanner SCANNER = new Scanner(System.in);
 
     public static double enterDouble() {
+        double number = 0.0;
         System.out.println("Введите число:");
-        if (scanner.hasNextDouble()) {
-            number = scanner.nextDouble();
+        if (SCANNER.hasNextDouble()) {
+            number = SCANNER.nextDouble();
             System.out.println("Вы ввели число:" + number);
         } else {
             System.out.println("Введенные данные не верны");

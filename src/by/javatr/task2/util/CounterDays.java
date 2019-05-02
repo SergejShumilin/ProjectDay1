@@ -1,12 +1,12 @@
 package by.javatr.task2.util;
 
-import by.javatr.task2.scanner.EnterDateFromConsole;
+import by.javatr.task2.scanner.MyScanner;
 
-public class CountDays {
+public class CounterDays {
 
-    public static void getCountDays() {
-        int year = EnterDateFromConsole.getYear();
-        int month = EnterDateFromConsole.getMonth();
+    public static void getCountDays() throws Exception {
+        int year = MyScanner.getYear();
+        int month = MyScanner.getMonth();
         if (year % 4 != 0 || year % 100 == 0 && year % 400 != 0) {
             System.out.println("Обычный год");
             switch (month){

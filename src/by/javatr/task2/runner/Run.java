@@ -1,9 +1,13 @@
 package by.javatr.task2.runner;
 
-import by.javatr.task2.util.CountDays;
+import by.javatr.task2.util.CounterDays;
 
 public class Run {
     public static void main(String[] args) {
-        CountDays.getCountDays();
+        try {
+            CounterDays.getCountDays();
+        } catch (Exception e) {
+            System.out.println("Введенные данные не верны");
+        }
     }
 }
