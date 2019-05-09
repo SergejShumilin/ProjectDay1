@@ -1,11 +1,17 @@
 package by.javatr.shumilin.task8.runner;
 
-import by.javatr.shumilin.scanner.ScannerOfDate;
+import by.javatr.shumilin.task8.service.ConsoleService;
 import by.javatr.shumilin.task8.util.CounterOfFunction;
 
+import static by.javatr.shumilin.scanner.CommonConstants.ASK_MESSAGE;
+import static by.javatr.shumilin.scanner.CommonConstants.ERROR_MESSAGE;
+
 public class Run {
+    public static ConsoleService service = new ConsoleService();
+
     public static void main(String[] args) {
-        int x = ScannerOfDate.getInteger();
-        System.out.println(CounterOfFunction.getValueFunction(x));
+        int value = service.getValue(ASK_MESSAGE, ERROR_MESSAGE);
+        double valueFunction = CounterOfFunction.getValueFunction(value);
+        System.out.println(valueFunction);
     }
 }

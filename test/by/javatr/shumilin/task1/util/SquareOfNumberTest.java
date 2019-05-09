@@ -8,8 +8,8 @@ import static org.junit.Assert.*;
 public class SquareOfNumberTest {
 
     @Test
-    public void getLastDigitOfSquareNumber_Negative_Number() {
-        int number = -17;
+    public void getLastDigitOfSquareNumber_Positive_Number() {
+        int number = 17;
 
         int expected = 9;
 
