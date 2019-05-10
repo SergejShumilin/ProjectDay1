@@ -5,9 +5,8 @@ import org.junit.Test;
 
 public class CounterOfTimeTest {
 
-
     @Test
-    public void getHour_Not_Null() {
+    public void getHourTest_Not_Null() {
         int second = 5687;
 
         int expected = 1;
@@ -17,7 +16,7 @@ public class CounterOfTimeTest {
     }
 
     @Test
-    public void getMinute_Not_Null() {
+    public void getMinuteTest_Not_Null() {
         int second = 5687;
         int expected = 94;
         int actual = CounterOfTime.getMinute(second);
@@ -26,7 +25,7 @@ public class CounterOfTimeTest {
     }
 
     @Test
-    public void getSecond_Not_Null() {
+    public void getSecondTest_Not_Null() {
         int second = 5687;
         int expected = 2087;
         int actual = CounterOfTime.getSecond(second);

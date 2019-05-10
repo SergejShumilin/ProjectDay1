@@ -3,12 +3,10 @@ package by.javatr.shumilin.task3.util;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class CounterOfAreaTest {
 
     @Test
-    public void getAreaOfSquareInsideCircle_Return_Area() {
+    public void getAreaOfSquareInsideCircleTest_Return_Area() {
         int number = 36;
 
         int expected = 18;
@@ -18,7 +16,7 @@ public class CounterOfAreaTest {
     }
 
     @Test
-    public void getDifferentBetweenSquares_Return_Different() {
+    public void getDifferentBetweenSquaresTest_Return_Different() {
         int areaSquareOutside = 36;
 
         int areaSquareInside = 18;

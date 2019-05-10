@@ -3,12 +3,10 @@ package by.javatr.shumilin.task2.util;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class CounterDaysTest {
 
     @Test
-    public void getCountDays_Leap_Year() {
+    public void getCountDaysTest_Leap_Year() {
         int year = 2000;
         int month = 2;
 

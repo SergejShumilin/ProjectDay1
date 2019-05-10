@@ -3,12 +3,10 @@ package by.javatr.shumilin.task9.util;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class CounterParametersOfCircleTest {
 
     @Test
-    public void getCircumferenceCircle_Not_Null() {
+    public void getCircumferenceCircleTest_Not_Null() {
         int radius = 6;
 
         double expected = 37.68;
@@ -18,7 +16,7 @@ public class CounterParametersOfCircleTest {
     }
 
     @Test
-    public void getSquareCircle_Not_Null() {
+    public void getSquareCircleTest_Not_Null() {
         int radius = 6;
 
         double expected = 113.04;

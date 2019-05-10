@@ -5,12 +5,10 @@ import org.junit.Test;
 
 import java.util.Map;
 
-import static org.junit.Assert.*;
-
 public class CounterOfFunctionTest {
 
     @Test
-    public void getFunctionValue_Not_Null() {
+    public void getFunctionValueTest_Not_Null() {
 
         double expected = 1.55;
         Double actual = 0.0;

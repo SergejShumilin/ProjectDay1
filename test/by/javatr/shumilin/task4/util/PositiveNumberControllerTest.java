@@ -6,13 +6,13 @@ import org.junit.Test;
 public class PositiveNumberControllerTest {
 
     @Test
-    public void isTwoPositiveNumbers_Get_False() {
+    public void isTwoPositiveNumbersTest_Get_False() {
 
         Assert.assertFalse(PositiveNumberController.isTwoPositiveNumbers(1,3,5, 6));
     }
 
     @Test
-    public void isTwoPositiveNumbers_GET_True() {
+    public void isTwoPositiveNumbersTest_GET_True() {
 
         Assert.assertTrue(PositiveNumberController.isTwoPositiveNumbers(1,4,5, 6));
     }

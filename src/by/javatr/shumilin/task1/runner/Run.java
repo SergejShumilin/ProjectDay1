@@ -7,6 +7,7 @@ import static by.javatr.shumilin.scanner.CommonConstants.ASK_MESSAGE;
 import static by.javatr.shumilin.scanner.CommonConstants.ERROR_MESSAGE;
 
 public class Run {
+
     public static ConsoleService service = new ConsoleService();
 
     public static void main(String[] args) {
